@@ -31,16 +31,19 @@ function randomArrayItem(arr){
     number.style.fontSize="150px"
     number.innerHTML=randomNumberItem
     
-    suit.forEach((elem)=>{
+    suit.forEach((elem,index)=>{
+      if(index==1){
+        elem.style.rotate="180deg"
+      }
       elem.style.color=randomSuitsItem.color
-      elem.style.fontSize="75px"
+      elem.style.fontSize="90px"
       elem.innerHTML=randomSuitsItem.icon
     })
     
   
 }
 
-l
+
 
 
 button.addEventListener("click",()=>randomCard(numbersArray,suitsArray))
